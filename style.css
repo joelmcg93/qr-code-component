@@ -9,6 +9,7 @@
   --slate500: hsl(216, 15%, 48%);
   --slate700: hsl(218, 44%, 22%);
   --white: hsl(0, 0%, 100%);
+  --shadow: #ccc;
 }
 
 /* ========================
@@ -38,7 +39,7 @@ body {
 
 .qr-container {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
 }
@@ -53,7 +54,7 @@ body {
   align-items: center;
   padding: 10px;
   border: 1px solid var(--slate300);
-  box-shadow: 0 20px 50px 2px #ccc;
+  box-shadow: 0 20px 50px 2px var(--shadow);
 }
 
 .qr-img {
@@ -71,7 +72,6 @@ body {
 
 .qr-info {
   text-align: center;
-  margin-bottom: 20px;
   font-size: 15px;
   font-weight: 400;
   color: var(--slate500);
