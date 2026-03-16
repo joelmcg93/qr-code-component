@@ -1,0 +1,78 @@
+/* ========================
+
+    ROOT VARIABLES
+   
+======================== */
+
+:root {
+  --slate300: hsl(212, 45%, 89%);
+  --slate500: hsl(216, 15%, 48%);
+  --slate700: hsl(218, 44%, 22%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* ========================
+
+    GLOBAL RESET
+
+======================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--slate300);
+}
+
+/* ========================
+
+    QR
+
+======================== */
+
+.qr-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-code-component {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  border-radius: 12px;
+  gap: 15px;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid var(--slate300);
+  box-shadow: 0 20px 50px 2px #ccc;
+}
+
+.qr-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 6px;
+}
+
+.qr-code-caption {
+  font-weight: 700;
+  text-align: center;
+  font-size: 20px;
+  color: var(--slate700);
+}
+
+.qr-info {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--slate500);
+}
